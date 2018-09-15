@@ -25,7 +25,7 @@ SECRET_KEY = 'xa^in-xr!v12czg%4rdp%3r7vnadgm@&4tjch4tr)oyyrl)&w*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', 'sianara.pythonanywhere.com']
 
 
 # Application definition

@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5863d6de-5de3-44f4-83c5-c0fd1cff44d0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myvenv/Lib/site-packages/Django-1.11.15.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/myvenv/Lib/site-packages/Django-1.11.15.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myvenv/Lib/site-packages/pip-10.0.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/myvenv/Lib/site-packages/pip-10.0.1.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myvenv/Lib/site-packages/setuptools-39.0.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/myvenv/Lib/site-packages/setuptools-39.0.1.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myvenv/Scripts/django-admin.exe" beforeDir="false" afterPath="$PROJECT_DIR$/myvenv/Scripts/django-admin.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myvenv/Scripts/easy_install-3.6.exe" beforeDir="false" afterPath="$PROJECT_DIR$/myvenv/Scripts/easy_install-3.6.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myvenv/Scripts/easy_install.exe" beforeDir="false" afterPath="$PROJECT_DIR$/myvenv/Scripts/easy_install.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myvenv/Scripts/pip.exe" beforeDir="false" afterPath="$PROJECT_DIR$/myvenv/Scripts/pip.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myvenv/Scripts/pip3.6.exe" beforeDir="false" afterPath="$PROJECT_DIR$/myvenv/Scripts/pip3.6.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myvenv/Scripts/pip3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/myvenv/Scripts/pip3.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myvenv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/myvenv/pip-selfcheck.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,16 +13,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
+            <state relative-caret-position="306">
+              <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
@@ -65,9 +54,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mysite/settings.py" />
         <option value="$PROJECT_DIR$/blog/admin.py" />
         <option value="$PROJECT_DIR$/blog/models.py" />
+        <option value="$PROJECT_DIR$/mysite/settings.py" />
       </list>
     </option>
   </component>
@@ -219,13 +208,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -243,6 +225,13 @@
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
         </state>
       </provider>
     </entry>
