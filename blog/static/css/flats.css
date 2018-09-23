@@ -1,0 +1,1064 @@
+
+header {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 13.4vh;
+  width: 100vw;
+  background: url("../img/header.png");
+  -webkit-background-size: cover;
+  background-size: cover; }
+  header > .left {
+    font-size: 3.3333333333vh;
+    font-family: "He";
+    color: white;
+    line-height: 1.222;
+    text-align: left;
+    -moz-transform: matrix(1.0009867076, 0, 0, 1.2030567937, 0, 0);
+    -webkit-transform: matrix(1.0009867076, 0, 0, 1.2030567937, 0, 0);
+    -ms-transform: matrix(1.0009867076, 0, 0, 1.2030567937, 0, 0);
+    margin-left: 4.3vw;
+    margin-right: 5.5vw; }
+  header > .data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    header > .data .top {
+      font-size: 2.7777777778vh;
+      font-family: "He";
+      color: white;
+      line-height: 1.463;
+      text-align: left;
+      -moz-transform: matrix(0.9999595865, 0, 0, 1.1970205581, 0, 0);
+      -webkit-transform: matrix(0.9999595865, 0, 0, 1.1970205581, 0, 0);
+      -ms-transform: matrix(0.9999595865, 0, 0, 1.1970205581, 0, 0); }
+    header > .data > .bot {
+      font-size: 1.6666666667vh;
+      font-family: "He";
+      color: white;
+      line-height: 2.445;
+      text-align: left;
+      -moz-transform: matrix(0.9999595865, 0, 0, 1.1970205581, 0, 0);
+      -webkit-transform: matrix(0.9999595865, 0, 0, 1.1970205581, 0, 0);
+      -ms-transform: matrix(0.9999595865, 0, 0, 1.1970205581, 0, 0); }
+  header > .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 9.3vw; }
+    header > .nav > a {
+      display: block;
+      font-size: 1.6666666667vh;
+      font-family: "He";
+      color: white;
+      line-height: 2.469;
+      text-align: left;
+      -moz-transform: matrix(1.0000997186, 0, 0, 1.1946024887, 0, 0);
+      -webkit-transform: matrix(1.0000997186, 0, 0, 1.1946024887, 0, 0);
+      -ms-transform: matrix(1.0000997186, 0, 0, 1.1946024887, 0, 0);
+      text-decoration: none;
+      margin-left: 4.1vw;
+      transition: opacity 0.5s ease; }
+      header > .nav > a:hover {
+        transition: opacity 0.5s ease;
+        opacity: 0.5; }
+  header > .call {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 4.3vw;
+    cursor: pointer;
+    transition: opacity 0.5s ease; }
+    header > .call:hover {
+      transition: opacity 0.5s ease;
+      opacity: 0.5; }
+    header > .call > .icon {
+      background: url("../img/call.png") no-repeat center;
+      background-size: cover;
+      width: 4.2592592593vh;
+      height: 4.2592592593vh;
+      margin-right: 1.4vw; }
+    header > .call .text {
+      font-size: 1.8518518519vh;
+      font-family: "He";
+      color: black;
+      text-decoration: underline;
+      line-height: 2.2;
+      text-align: center;
+      -moz-transform: scale(1, 1.2);
+      -webkit-transform: scale(1, 1.2);
+      -ms-transform: scale(1, 1.2); }
+
+@media screen and (max-width: 980px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 11;
+    height: 10vh;
+    background: #2991e2;
+    flex-direction: column;
+    align-items: center;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+    width: 100vw;
+    justify-content: space-between; }
+    header > .left {
+      line-height: 10vh;
+      margin-bottom: 2vh; }
+    header > #hamb {
+      display: block;
+      width: 7vh;
+      height: 7vh;
+      position: absolute;
+      top: 2vh;
+      left: 2vh;
+      background: url("../img/hamb.png") no-repeat center;
+      -webkit-background-size: contain;
+      background-size: contain; }
+    header > .logo {
+      margin-top: 3vh;
+      margin-bottom: 8vh; }
+    header > .nums {
+      align-items: center;
+      font-size: 3.33333vh; }
+      header > .nums > .top {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 4vh;
+        font-size: 3.33333vh; }
+      header > .nums > .bot {
+        font-size: 3.33333vh;
+        margin-bottom: 4vh; }
+    header > .nav {
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0;
+      margin-left: 0; }
+      header > .nav > a {
+        font-size: 3.33333vh;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 4vh; }
+        header > .nav > a:last-child {
+          margin-bottom: 0; }
+    header > .data {
+      align-items: center; }
+    header > .call {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 5vh; }
+      header > .call > .text {
+        font-size: 3.33333vh;
+        color: white;
+        text-decoration: none; }
+      header > .call > .icon {
+        display: none; } }
+footer {
+  display: flex;
+  flex-direction: column; }
+  footer > .botnav {
+    height: 9.4vh;
+    background-color: #83bef4;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    footer > .botnav > .nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 4.3vw; }
+      footer > .botnav > .nav > a {
+        font-size: 1.8518518519vh;
+        font-family: "He";
+        color: white;
+        line-height: 2.164;
+        text-align: left;
+        -moz-transform: matrix(1.0010961935, 0, 0, 1.1803081872, 0, 0);
+        -webkit-transform: matrix(1.0010961935, 0, 0, 1.1803081872, 0, 0);
+        -ms-transform: matrix(1.0010961935, 0, 0, 1.1803081872, 0, 0);
+        margin-right: 4.8vw;
+        transition: opacity 0.5s ease; }
+        footer > .botnav > .nav > a:hover {
+          transition: opacity 0.5s ease;
+          opacity: 0.5;
+          cursor: pointer; }
+    footer > .botnav > .contacts {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: auto;
+      margin-right: 0; }
+      footer > .botnav > .contacts > .phone {
+        text-transform: uppercase;
+        font-size: 2.4074074074vh;
+        font-family: "He";
+        color: white;
+        line-height: 2.164;
+        text-align: left;
+        -moz-transform: matrix(1.0010961935, 0, 0, 1.1803081872, 0, 0);
+        -webkit-transform: matrix(1.0010961935, 0, 0, 1.1803081872, 0, 0);
+        -ms-transform: matrix(1.0010961935, 0, 0, 1.1803081872, 0, 0);
+        margin-right: 4.8vw;
+        transition: opacity 0.5s ease; }
+        footer > .botnav > .contacts > .phone:hover {
+          transition: opacity 0.5s ease;
+          opacity: 0.5;
+          cursor: pointer; }
+      footer > .botnav > .contacts > .mail {
+        font-size: 2.5vh;
+        font-family: "He";
+        color: white;
+        line-height: 2.164;
+        text-align: left;
+        -moz-transform: matrix(1.0010961935, 0, 0, 1.1803081872, 0, 0);
+        -webkit-transform: matrix(1.0010961935, 0, 0, 1.1803081872, 0, 0);
+        -ms-transform: matrix(1.0010961935, 0, 0, 1.1803081872, 0, 0);
+        margin-right: 4.3vw;
+        transition: opacity 0.5s ease; }
+        footer > .botnav > .contacts > .mail:hover {
+          transition: opacity 0.5s ease;
+          opacity: 0.5;
+          cursor: pointer; }
+  footer > .adress {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 52vh; }
+    footer > .adress > .left {
+      width: 30vw;
+      height: 52vh;
+      background-color: #2991e2; }
+      footer > .adress > .left > .town {
+        margin-left: 4.3vw;
+        font-size: 2.2222222222vh;
+        font-family: "He";
+        color: white;
+        line-height: 1;
+        text-align: left;
+        -moz-transform: matrix(1.0007835185, 0, 0, 1.1803494472, 0, 0);
+        -webkit-transform: matrix(1.0007835185, 0, 0, 1.1803494472, 0, 0);
+        -ms-transform: matrix(1.0007835185, 0, 0, 1.1803494472, 0, 0);
+        margin-top: 8.2vh;
+        margin-bottom: 7.5vh; }
+      footer > .adress > .left > .phone {
+        margin-left: 4.3vw;
+        font-size: 2.4074074074vh;
+        font-family: "He";
+        color: white;
+        line-height: 1;
+        text-align: left;
+        -moz-transform: matrix(1.0007835921, 0, 0, 1.1932003964, 0, 0);
+        -webkit-transform: matrix(1.0007835921, 0, 0, 1.1932003964, 0, 0);
+        -ms-transform: matrix(1.0007835921, 0, 0, 1.1932003964, 0, 0); }
+      footer > .adress > .left > .mail {
+        margin-top: 2.8vh;
+        margin-left: 4.3vw;
+        font-size: 1.9444444444vh;
+        font-family: "HeliosExt";
+        color: white;
+        line-height: 1;
+        text-align: left;
+        -moz-transform: matrix(1.0007835921, 0, 0, 1.1932003964, 0, 0);
+        -webkit-transform: matrix(1.0007835921, 0, 0, 1.1932003964, 0, 0);
+        -ms-transform: matrix(1.0007835921, 0, 0, 1.1932003964, 0, 0); }
+      footer > .adress > .left > .adres {
+        margin-top: 2.8vh;
+        margin-left: 4.3vw;
+        width: 13.6vw;
+        font-size: 1.9444444444vh;
+        font-family: "He";
+        color: white;
+        line-height: 1.855;
+        text-align: left;
+        -moz-transform: matrix(1.0007835921, 0, 0, 1.1932003964, 0, 0);
+        -webkit-transform: matrix(1.0007835921, 0, 0, 1.1932003964, 0, 0);
+        -ms-transform: matrix(1.0007835921, 0, 0, 1.1932003964, 0, 0); }
+      footer > .adress > .left > .socs {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 4.3vw;
+        margin-top: 7.8vh; }
+        footer > .adress > .left > .socs > .vk {
+          background: url("../img/vk.png") no-repeat center;
+          width: 5.6481481481vh;
+          height: 3.5185185185vh;
+          background-size: cover;
+          margin-right: 2.3vw;
+          transition: opacity 0.5s ease; }
+          footer > .adress > .left > .socs > .vk:hover {
+            transition: opacity 0.5s ease;
+            opacity: 0.5;
+            cursor: pointer; }
+        footer > .adress > .left > .socs > .inst {
+          background: url("../img/inst.png") no-repeat center;
+          width: 3.6111111111vh;
+          height: 3.6111111111vh;
+          background-size: cover;
+          margin-right: 2.3vw;
+          transition: opacity 0.5s ease; }
+          footer > .adress > .left > .socs > .inst:hover {
+            transition: opacity 0.5s ease;
+            opacity: 0.5;
+            cursor: pointer; }
+    footer > .adress > .right {
+      height: 52vh;
+      width: 70vw;
+      background: url("../img/mapex.png") no-repeat center;
+      background-size: cover; }
+
+@media screen and (max-width: 980px) {
+  footer > .botnav {
+    padding-top: 5vh;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap; }
+    footer > .botnav > .nav {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0; }
+      footer > .botnav > .nav > a {
+        line-height: 5vh;
+        font-size: 2.4691358333vh;
+        margin-right: 0; }
+    footer > .botnav > .contacts {
+      flex-direction: column;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 5vh; }
+      footer > .botnav > .contacts > .phone {
+        font-size: 2.4691358333vh;
+        margin-left: 0;
+        margin-right: 0; }
+      footer > .botnav > .contacts > .mail {
+        font-size: 2.4691358333vh;
+        margin-left: 0;
+        margin-right: 0; }
+  footer > .adress {
+    flex-direction: column;
+    align-items: center;
+    height: auto; }
+    footer > .adress > .left {
+      width: 100vw;
+      height: auto; }
+      footer > .adress > .left > .town {
+        margin-top: 5vh;
+        font-size: 2.4691358333vh;
+        margin-bottom: 2vh; }
+      footer > .adress > .left > .phone {
+        font-size: 2.4691358333vh; }
+      footer > .adress > .left > .mail {
+        margin-top: 2vh;
+        font-size: 2.4691358333vh; }
+      footer > .adress > .left > .adres {
+        width: 90vw;
+        font-size: 2.4691358333vh;
+        margin-top: 2vh; }
+      footer > .adress > .left > .socs {
+        margin-top: 2vh;
+        margin-bottom: 5vh; }
+    footer > .adress > .right {
+      width: 100vw;
+      height: 40vh; } }
+@font-face {
+  font-family: 'He';
+  src: url("../fonts/HeliosExt.otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'HeB';
+  src: url("../fonts/HeliosExt-Bold.otf");
+  font-weight: normal;
+  font-style: normal; }
+html {
+  margin: 0;
+  padding: 0; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+@media screen and (max-width: 980px) {
+  html {
+    width: 100vw;
+    min-height: 5vh;
+    overflow-x: hidden; }
+
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+    height: auto; } }
+article {
+  width: 100vw;
+  height: auto;
+  background-color: #f7f7f7; }
+  article > .header {
+    margin-left: 4.3vw;
+    margin-top: 17.8vh;
+    font-size: 3.8888888889vh;
+    font-family: "He";
+    color: black;
+    line-height: 1.047;
+    text-align: left;
+    -moz-transform: matrix(1.0001347838, 0, 0, 1.1997315677, 0, 0);
+    -webkit-transform: matrix(1.0001347838, 0, 0, 1.1997315677, 0, 0);
+    -ms-transform: matrix(1.0001347838, 0, 0, 1.1997315677, 0, 0); }
+  article > .nav {
+    margin-top: 2.3vh;
+    margin-left: 4.3vw;
+    font-size: 1.2962962963vh;
+    font-family: "He";
+    color: #7f7f7f;
+    line-height: 3.137;
+    text-align: left;
+    -moz-transform: matrix(1.0001347838, 0, 0, 1.1976844748, 0, 0);
+    -webkit-transform: matrix(1.0001347838, 0, 0, 1.1976844748, 0, 0);
+    -ms-transform: matrix(1.0001347838, 0, 0, 1.1976844748, 0, 0); }
+  article > .filters {
+    margin-top: 3vh;
+    margin-left: 4.3vw; }
+    article > .filters > form {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      flex-wrap: wrap; }
+      article > .filters > form > .drop {
+        font-size: 1.6666666667vh;
+        font-family: "He";
+        color: #7f7f7f;
+        background: white;
+        border: none;
+        width: 15vw;
+        padding-left: 1vw;
+        height: 5.1vh;
+        margin-right: 0.5vw;
+        border-radius: 0.7407407407vh;
+        -moz-transform: matrix(0.9999311983, 0, 0, 1.1950865171, 0, 0);
+        -webkit-transform: matrix(0.9999311983, 0, 0, 1.1950865171, 0, 0);
+        -ms-transform: matrix(0.9999311983, 0, 0, 1.1950865171, 0, 0);
+        outline: none; }
+      article > .filters > form > .rooms {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 16.8vw;
+        padding-left: 1vw;
+        height: 5.1vh;
+        margin-right: 0.5vw;
+        border-radius: 0.7407407407vh;
+        -moz-transform: matrix(0.9999311983, 0, 0, 1.1950865171, 0, 0);
+        -webkit-transform: matrix(0.9999311983, 0, 0, 1.1950865171, 0, 0);
+        -ms-transform: matrix(0.9999311983, 0, 0, 1.1950865171, 0, 0);
+        font-size: 1.6666666667vh;
+        font-family: "He";
+        color: #7f7f7f;
+        background: white; }
+        article > .filters > form > .rooms > .text {
+          width: 6.3vw; }
+        article > .filters > form > .rooms > .rooms {
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          article > .filters > form > .rooms > .rooms > .room {
+            width: 2.1vw; }
+      article > .filters > form > .price {
+        width: 22.3vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 1.6666666667vh;
+        font-family: "He";
+        color: #7f7f7f;
+        background: white;
+        border: none;
+        padding-left: 1vw;
+        height: 5.1vh;
+        margin-right: 0.5vw;
+        border-radius: 0.7407407407vh;
+        -moz-transform: matrix(0.9999311983, 0, 0, 1.1950865171, 0, 0);
+        -webkit-transform: matrix(0.9999311983, 0, 0, 1.1950865171, 0, 0);
+        -ms-transform: matrix(0.9999311983, 0, 0, 1.1950865171, 0, 0);
+        outline: none; }
+        article > .filters > form > .price > input {
+          font-size: 1.6666666667vh;
+          font-family: "He";
+          color: #7f7f7f;
+          width: 4vw;
+          border: none;
+          padding: 0;
+          height: 3.5vh;
+          border-radius: 0.7407407407vh;
+          -moz-transform: matrix(0.9999311983, 0, 0, 1.1950865171, 0, 0);
+          -webkit-transform: matrix(0.9999311983, 0, 0, 1.1950865171, 0, 0);
+          -ms-transform: matrix(0.9999311983, 0, 0, 1.1950865171, 0, 0);
+          outline: none;
+          margin-left: 1.5vw;
+          margin-right: 1.5vw; }
+      article > .filters > form > .zz {
+        width: 31.5vw;
+        margin-bottom: 3.6vh; }
+        article > .filters > form > .zz > input {
+          width: 8vw; }
+      article > .filters > form > .down > .inf {
+        width: 4.8vw !important; }
+      article > .filters > form > .flat {
+        width: 16.9vw; }
+        article > .filters > form > .flat > input {
+          width: 3vw;
+          margin-left: auto;
+          margin-right: 1vw; }
+      article > .filters > form > .year > .fst {
+        width: 2vw; }
+      article > .filters > form > .material > input {
+        width: 7vw; }
+      article > .filters > form > .sub {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        background: #2991e2;
+        border: none;
+        font-size: 1.6666666667vh;
+        font-family: "He";
+        text-align: center;
+        color: white;
+        width: 16.3vw;
+        height: 5.1vh;
+        border-radius: 0.7407407407vh;
+        -moz-transform: matrix(0.9999311983, 0, 0, 1.1950865171, 0, 0);
+        -webkit-transform: matrix(0.9999311983, 0, 0, 1.1950865171, 0, 0);
+        -ms-transform: matrix(0.9999311983, 0, 0, 1.1950865171, 0, 0);
+        outline: none;
+        margin-bottom: 3.6vh;
+        transition: opacity 0.5s ease; }
+        article > .filters > form > .sub:hover {
+          transition: opacity 0.5s ease;
+          opacity: 0.5; }
+      article > .filters > form > .more {
+        font-size: 1.6666666667vh;
+        font-family: "He";
+        text-align: center;
+        color: #2991e2;
+        background: white;
+        border: none;
+        width: 15vw;
+        padding-left: 1vw;
+        height: 5.1vh;
+        line-height: 5.1vh;
+        border-radius: 0.7407407407vh;
+        -moz-transform: matrix(0.9999311983, 0, 0, 1.1950865171, 0, 0);
+        -webkit-transform: matrix(0.9999311983, 0, 0, 1.1950865171, 0, 0);
+        -ms-transform: matrix(0.9999311983, 0, 0, 1.1950865171, 0, 0);
+        margin-left: 25.5vw;
+        margin-right: auto; }
+  article > .result {
+    display: flex;
+    flex-direction: column;
+    background: white; }
+    article > .result > .nav {
+      width: 91.4vw;
+      margin-left: 4.3vw;
+      height: 5vh;
+      margin-top: 4vh;
+      margin-bottom: 4vh;
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      article > .result > .nav > .sort {
+        width: 22vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 4vw; }
+        article > .result > .nav > .sort > .text {
+          font-size: 1.6666666667vh;
+          font-family: "He";
+          color: #333333;
+          line-height: 2.434;
+          text-align: left;
+          -moz-transform: matrix(0.9999311983, 0, 0, 1.2054785738, 0, 0);
+          -webkit-transform: matrix(0.9999311983, 0, 0, 1.2054785738, 0, 0);
+          -ms-transform: matrix(0.9999311983, 0, 0, 1.2054785738, 0, 0); }
+        article > .result > .nav > .sort > .dropDown {
+          background-color: #f7f7f7;
+          width: 12.7vw;
+          padding-left: 1vw;
+          font-size: 1.6666666667vh;
+          font-family: "He";
+          color: #333333;
+          line-height: 2.434;
+          text-align: left;
+          -moz-transform: matrix(0.9999311983, 0, 0, 1.2054785738, 0, 0);
+          -webkit-transform: matrix(0.9999311983, 0, 0, 1.2054785738, 0, 0);
+          -ms-transform: matrix(0.9999311983, 0, 0, 1.2054785738, 0, 0);
+          margin-left: auto;
+          margin-right: 0;
+          border-radius: 0.7407407407vh; }
+      article > .result > .nav > .pages {
+        margin-left: auto;
+        margin-right: 0;
+        width: 19.4vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 5vh; }
+        article > .result > .nav > .pages > .text {
+          font-size: 1.6666666667vh;
+          font-family: "He";
+          color: #333333;
+          line-height: 2.434;
+          text-align: left;
+          -moz-transform: matrix(0.9999311983, 0, 0, 1.2054785738, 0, 0);
+          -webkit-transform: matrix(0.9999311983, 0, 0, 1.2054785738, 0, 0);
+          -ms-transform: matrix(0.9999311983, 0, 0, 1.2054785738, 0, 0); }
+        article > .result > .nav > .pages > .nums {
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          article > .result > .nav > .pages > .nums > .curPage {
+            width: 2.6vw;
+            height: 5vh;
+            background-color: #f7f7f7;
+            margin-left: 1.4vw;
+            margin-right: 1.4vw; }
+            article > .result > .nav > .pages > .nums > .curPage > .num {
+              font-size: 1.6666666667vh;
+              font-family: "He";
+              color: #333333;
+              line-height: 5vh;
+              text-align: center;
+              -moz-transform: matrix(0.9999311983, 0, 0, 1.2054785738, 0, 0);
+              -webkit-transform: matrix(0.9999311983, 0, 0, 1.2054785738, 0, 0);
+              -ms-transform: matrix(0.9999311983, 0, 0, 1.2054785738, 0, 0); }
+          article > .result > .nav > .pages > .nums > .page {
+            font-size: 1.6666666667vh;
+            font-family: "He";
+            color: #333333;
+            line-height: 5vh;
+            text-align: center;
+            -moz-transform: matrix(0.9999311983, 0, 0, 1.2054785738, 0, 0);
+            -webkit-transform: matrix(0.9999311983, 0, 0, 1.2054785738, 0, 0);
+            -ms-transform: matrix(0.9999311983, 0, 0, 1.2054785738, 0, 0); }
+        article > .result > .nav > .pages > .controls {
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          article > .result > .nav > .pages > .controls > .left {
+            margin-left: 1.4vw;
+            margin-right: 0.3vw;
+            width: 2.6vw;
+            height: 5vh;
+            background-color: #f7f7f7; }
+            article > .result > .nav > .pages > .controls > .left > .icon {
+              background: url("../img/arrowLeftActive.png") no-repeat center;
+              width: 2.6vw;
+              height: 4vh;
+              margin-top: 0.5vh;
+              background-size: contain; }
+              article > .result > .nav > .pages > .controls > .left > .icon.unactive {
+                background: url("../img/arrowLeftUnactive.png") no-repeat center;
+                background-size: contain; }
+          article > .result > .nav > .pages > .controls > .right {
+            margin-left: 0;
+            margin-right: 0.3vw;
+            width: 2.6vw;
+            height: 5vh;
+            background-color: #f7f7f7; }
+            article > .result > .nav > .pages > .controls > .right > .icon {
+              background: url("../img/arrowRight.png") no-repeat center;
+              width: 2.6vw;
+              height: 4vh;
+              margin-top: 0.5vh;
+              background-size: contain; }
+    article > .result > .objects {
+      margin-left: 4.3vw;
+      width: 91.4vw;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 11vh; }
+      article > .result > .objects > .object {
+        width: 17.8vw;
+        height: auto;
+        margin-right: 6.8vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        article > .result > .objects > .object > .back {
+          height: 21.7vh;
+          width: 17.8vw;
+          background: url("../img/ex.png") no-repeat center;
+          background-size: cover; }
+          article > .result > .objects > .object > .back > .price {
+            margin-top: 17.5vh;
+            margin-left: auto;
+            margin-right: 0;
+            height: 4.2vh;
+            width: 11.1vw;
+            background-color: #fff600; }
+            article > .result > .objects > .object > .back > .price > .text {
+              font-size: 1.8518518519vh;
+              font-family: "He";
+              color: #424242;
+              line-height: 2.194;
+              text-align: center;
+              -moz-transform: matrix(1.0001094335, 0, 0, 1.1968514593, 0, 0);
+              -webkit-transform: matrix(1.0001094335, 0, 0, 1.1968514593, 0, 0);
+              -ms-transform: matrix(1.0001094335, 0, 0, 1.1968514593, 0, 0); }
+        article > .result > .objects > .object > .descr {
+          margin-top: 2.1vh;
+          width: 16.2vw;
+          display: flex;
+          flex-direction: column; }
+          article > .result > .objects > .object > .descr > .top > .rooms {
+            font-size: 1.8518518519vh;
+            font-family: "He";
+            color: #6ea0d3;
+            text-align: left;
+            -moz-transform: matrix(1.0004179763, 0, 0, 1.1960203124, 0, 0);
+            -webkit-transform: matrix(1.0004179763, 0, 0, 1.1960203124, 0, 0);
+            -ms-transform: matrix(1.0004179763, 0, 0, 1.1960203124, 0, 0);
+            margin-bottom: 1.2vh; }
+          article > .result > .objects > .object > .descr > .top > .adress {
+            font-size: 1.2962962963vh;
+            font-family: "He";
+            color: #797979;
+            text-align: left;
+            -moz-transform: matrix(1.0004179763, 0, 0, 1.1960203124, 0, 0);
+            -webkit-transform: matrix(1.0004179763, 0, 0, 1.1960203124, 0, 0);
+            -ms-transform: matrix(1.0004179763, 0, 0, 1.1960203124, 0, 0);
+            margin-bottom: 2.1vh; }
+          article > .result > .objects > .object > .descr > .bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 16.2vw; }
+            article > .result > .objects > .object > .descr > .bottom > .row {
+              width: 16.2vw;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              margin-bottom: 1.3vh;
+              font-size: 1.2962962963vh;
+              font-family: "He";
+              color: #6a6a6a;
+              text-align: left;
+              -moz-transform: matrix(1.0004180091, 0, 0, 1.1899960223, 0, 0);
+              -webkit-transform: matrix(1.0004180091, 0, 0, 1.1899960223, 0, 0);
+              -ms-transform: matrix(1.0004180091, 0, 0, 1.1899960223, 0, 0); }
+              article > .result > .objects > .object > .descr > .bottom > .row:last-child {
+                margin-bottom: 0; }
+              article > .result > .objects > .object > .descr > .bottom > .row > .left {
+                width: 8.1vw;
+                text-align: left; }
+              article > .result > .objects > .object > .descr > .bottom > .row > .right {
+                width: 8.1vw;
+                text-align: right; }
+        article > .result > .objects > .object > .button {
+          margin-top: 3vh;
+          width: 10.8vw;
+          height: 4.3vh;
+          border-radius: 0.462962963vh;
+          background-color: #1c8fe0;
+          transition: opacity 0.5s ease; }
+          article > .result > .objects > .object > .button:hover {
+            transition: opacity 0.5s ease;
+            opacity: 0.5;
+            cursor: pointer; }
+          article > .result > .objects > .object > .button > .text {
+
+    display: block ;
+    text-decoration: none ;
+            font-size: 1.6666666667vh;
+            font-family: "He";
+            color: white;
+            line-height: 2.434;
+            text-align: center;
+            -moz-transform: matrix(1.0014589059, 0, 0, 1.1944116044, 0, 0);
+            -webkit-transform: matrix(1.0014589059, 0, 0, 1.1944116044, 0, 0);
+            -ms-transform: matrix(1.0014589059, 0, 0, 1.1944116044, 0, 0); }
+    article > .result > .pages {
+      margin-left: auto;
+      margin-right: auto;
+      width: 19.4vw;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 5vh;
+      margin-bottom: 7vh; }
+      article > .result > .pages > .text {
+        font-size: 1.6666666667vh;
+        font-family: "He";
+        color: #333333;
+        line-height: 2.434;
+        text-align: left;
+        -moz-transform: matrix(0.9999311983, 0, 0, 1.2054785738, 0, 0);
+        -webkit-transform: matrix(0.9999311983, 0, 0, 1.2054785738, 0, 0);
+        -ms-transform: matrix(0.9999311983, 0, 0, 1.2054785738, 0, 0); }
+      article > .result > .pages > .nums {
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        article > .result > .pages > .nums > .curPage {
+          width: 2.6vw;
+          height: 5vh;
+          background-color: #f7f7f7;
+          margin-left: 1.4vw;
+          margin-right: 1.4vw; }
+          article > .result > .pages > .nums > .curPage > .num {
+            font-size: 1.6666666667vh;
+            font-family: "He";
+            color: #333333;
+            line-height: 5vh;
+            text-align: center;
+            -moz-transform: matrix(0.9999311983, 0, 0, 1.2054785738, 0, 0);
+            -webkit-transform: matrix(0.9999311983, 0, 0, 1.2054785738, 0, 0);
+            -ms-transform: matrix(0.9999311983, 0, 0, 1.2054785738, 0, 0); }
+        article > .result > .pages > .nums > .page {
+          font-size: 1.6666666667vh;
+          font-family: "He";
+          color: #333333;
+          line-height: 5vh;
+          text-align: center;
+          -moz-transform: matrix(0.9999311983, 0, 0, 1.2054785738, 0, 0);
+          -webkit-transform: matrix(0.9999311983, 0, 0, 1.2054785738, 0, 0);
+          -ms-transform: matrix(0.9999311983, 0, 0, 1.2054785738, 0, 0); }
+      article > .result > .pages > .controls {
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        article > .result > .pages > .controls > .left {
+          margin-left: 1.4vw;
+          margin-right: 0.3vw;
+          width: 2.6vw;
+          height: 5vh;
+          background-color: #f7f7f7; }
+          article > .result > .pages > .controls > .left > .icon {
+            background: url("../img/arrowLeftActive.png") no-repeat center;
+            width: 2.6vw;
+            height: 4vh;
+            margin-top: 0.5vh;
+            background-size: contain; }
+            article > .result > .pages > .controls > .left > .icon.unactive {
+              background: url("../img/arrowLeftUnactive.png") no-repeat center;
+              background-size: contain; }
+        article > .result > .pages > .controls > .right {
+          margin-left: 0;
+          margin-right: 0.3vw;
+          width: 2.6vw;
+          height: 5vh;
+          background-color: #f7f7f7; }
+          article > .result > .pages > .controls > .right > .icon {
+            background: url("../img/arrowRight.png") no-repeat center;
+            width: 2.6vw;
+            height: 4vh;
+            margin-top: 0.5vh;
+            background-size: contain; }
+
+@media screen and (max-width: 980px) {
+  article > .header {
+    width: 90vw;
+    margin-left: 5vw;
+    font-size: 2.962962963vh;
+    text-align: center;
+    line-height: 1.3;
+    margin-top: 15vh; }
+  article > .nav {
+    font-size: 1.9753086111vh; }
+  article > .filters {
+    width: 90vw;
+    margin-left: 5vw; }
+    article > .filters > form {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center; }
+      article > .filters > form > input {
+        width: 85vw !important;
+        margin-bottom: 4vh;
+        padding-left: 5vw !important; }
+      article > .filters > form > .rooms {
+        width: 85vw;
+        padding-left: 5vw;
+        margin-bottom: 4vh; }
+        article > .filters > form > .rooms > .text {
+          width: 20vw;
+          margin-right: 20vw;
+          padding-left: 0 !important; }
+        article > .filters > form > .rooms > .rooms {
+          width: 50vw;
+          justify-content: space-between; }
+          article > .filters > form > .rooms > .rooms > .room {
+            width: 8vw; }
+      article > .filters > form > .price {
+        width: 85vw;
+        padding-left: 5vw;
+        margin-bottom: 4vh; }
+        article > .filters > form > .price > .left {
+          width: 30vw;
+          padding-left: 0 !important; }
+        article > .filters > form > .price > input {
+          width: 15vw; }
+      article > .filters > form > .zz {
+        width: 85vw;
+        padding-left: 5vw;
+        margin-bottom: 4vh; }
+        article > .filters > form > .zz > .left {
+          width: 30vw;
+          padding-left: 0 !important; }
+        article > .filters > form > .zz > input {
+          width: 15vw !important; }
+      article > .filters > form > .down {
+        width: 85vw;
+        padding-left: 5vw;
+        margin-bottom: 4vh; }
+        article > .filters > form > .down > .left {
+          width: 30vw;
+          padding-left: 0 !important; }
+        article > .filters > form > .down > .inf {
+          width: 15vw !important; }
+      article > .filters > form > .year > .left {
+        width: 40vw; }
+      article > .filters > form > .year > input {
+        width: 15vw !important; }
+      article > .filters > form > .more {
+        width: 90vw;
+        margin-left: 0;
+        padding-left: 0;
+        margin-bottom: 4vh; }
+  article > .result {
+    width: 100vw; }
+    article > .result > .nav {
+      flex-direction: column;
+      align-items: center;
+      width: 90vw;
+      height: auto;
+      margin-left: 5vw; }
+      article > .result > .nav > .sort {
+        margin-right: 0;
+        width: 90vw;
+        height: auto;
+        flex-direction: column;
+        align-items: center; }
+        article > .result > .nav > .sort > .text {
+          font-size: 2.4691358333vh;
+          margin-bottom: 3vh; }
+        article > .result > .nav > .sort > .dropDown {
+          margin-left: 0;
+          width: 90vw;
+          text-align: center;
+          font-size: 1.9753086111vh;
+          margin-bottom: 5vh; }
+      article > .result > .nav > .pages {
+        margin-left: 5vw;
+        width: 90vw;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        height: auto; }
+        article > .result > .nav > .pages > .text {
+          font-size: 2.4691358333vh; }
+        article > .result > .nav > .pages > .nums > .curPage {
+          width: 10vw;
+          height: 10vw; }
+          article > .result > .nav > .pages > .nums > .curPage > .num {
+            font-size: 2.4691358333vh; }
+        article > .result > .nav > .pages > .nums > .page {
+          font-size: 2.4691358333vh; }
+        article > .result > .nav > .pages > .controls > .left {
+          width: 10vw;
+          height: 10vw;
+          margin-right: 5vw; }
+          article > .result > .nav > .pages > .controls > .left > .icon {
+            width: 8vw;
+            height: 8vw; }
+        article > .result > .nav > .pages > .controls > .right {
+          width: 10vw;
+          height: 10vw; }
+          article > .result > .nav > .pages > .controls > .right > .icon {
+            width: 8vw;
+            height: 8vw; }
+    article > .result > .objects {
+      width: 90vw;
+      flex-direction: column; }
+      article > .result > .objects > .object {
+        width: 90vw;
+        margin-right: 0 !important; }
+        article > .result > .objects > .object > .back {
+          width: 90vw;
+          height: 35vh; }
+          article > .result > .objects > .object > .back > .price {
+            width: 50vw;
+            height: 5vh;
+            margin-top: 30vh; }
+            article > .result > .objects > .object > .back > .price > .text {
+              font-size: 2.4691358333vh;
+              line-height: 5vh; }
+        article > .result > .objects > .object > .descr {
+          width: 90vw;
+          margin-left: 0; }
+          article > .result > .objects > .object > .descr > .top > .rooms {
+            font-size: 2.4691358333vh; }
+          article > .result > .objects > .object > .descr > .top > .adress {
+            font-size: 1.9753086111vh;
+            margin-bottom: 5vh; }
+          article > .result > .objects > .object > .descr > .bottom {
+            width: 90vw; }
+            article > .result > .objects > .object > .descr > .bottom > .row {
+              font-size: 1.9753086111vh;
+              width: 90vw;
+              margin-bottom: 3vh; }
+              article > .result > .objects > .object > .descr > .bottom > .row > .left {
+                width: 45vw; }
+              article > .result > .objects > .object > .descr > .bottom > .row > .right {
+                width: 45vw; }
+        article > .result > .objects > .object > .button {
+          margin-top: 5vh;
+          margin-bottom: 5vh;
+          width: 60vw;
+          height: 5vh; }
+          article > .result > .objects > .object > .button > .text {
+            font-size: 2.4691358333vh;
+            line-height: 5vh; }
+    article > .result > .pages {
+      margin-left: 5vw;
+      width: 90vw;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      height: auto; }
+      article > .result > .pages > .text {
+        font-size: 2.4691358333vh; }
+      article > .result > .pages > .nums > .curPage {
+        width: 10vw;
+        height: 10vw; }
+        article > .result > .pages > .nums > .curPage > .num {
+          font-size: 2.4691358333vh; }
+      article > .result > .pages > .nums > .page {
+        font-size: 2.4691358333vh; }
+      article > .result > .pages > .controls > .left {
+        width: 10vw;
+        height: 10vw;
+        margin-right: 5vw; }
+        article > .result > .pages > .controls > .left > .icon {
+          width: 8vw;
+          height: 8vw; }
+      article > .result > .pages > .controls > .right {
+        width: 10vw;
+        height: 10vw; }
+        article > .result > .pages > .controls > .right > .icon {
+          width: 8vw;
+          height: 8vw; } }
+
+/*# sourceMappingURL=catalog.css.map */

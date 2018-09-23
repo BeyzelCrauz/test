@@ -1,10 +1,146 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/flat.css' %}">
 </head>
 <body>
-$END$
+<header>
+    <div class="left">Уют</div>
+    <div class="data">
+        <div class="top">8-800-000-00-00</div>
+        <div class="bot">пн-пт с 8 до 11</div>
+    </div>
+    <div class="nav">
+        <a href="../../">Главная</a>
+        <a href="../../flats">Участки</a>
+        <a href="../../flats">Квартиры</a>
+        <a href="../../blog">Блог</a>
+        <a href="contacts.html">Контакты</a>
+    </div>
+    <div class="call">
+        <div class="icon"></div>
+        <div class="text">Заказать звонок</div>
+    </div>
+</header>
+    <article>
+        <div class="nav">
+            Главная > Блог
+        </div>
+        {% for flat in flat %}
+            <div class="header">Трёхкомнатная квартира</div>
+        <div class="adr">{{ flat.adres }}</div>
+        <div class="object">
+            <div class="top">
+                <div class="left">
+                    <div class="photo">
+                        <div class="order">
+                            <div class="text">
+                                1/10
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="navLeft"></div>
+                        <div class="items">
+                            <div class="itemList" id="itemlist">
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                        </div>
+                        <div class="navRight"></div>
+                    </div>
+                </div>
+                <div class="rw">
+                    <div class="right">
+                        <div class="top">
+                            <div class="price">
+                                <div class="full">
+                                    {{ flat.price }} руб.
+                                </div>
+                                <div class="bank">
+                                    В ипотеку: {{ flat.bank_price }} руб/мес
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="details">
+                                <div class="row">
+                                    <div class="left">Общая площадь</div>
+                                    <div class="right">{{ flat.square }}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="left">Этаж / Этажность</div>
+                                    <div class="right">{{ flat.floor }} / {{ flat.floors }}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="left">Жилая площадь</div>
+                                    <div class="right">{{ flat.live_square }}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="left">Район</div>
+                                    <div class="right">{{ flat.district }}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="left">Год постройки</div>
+                                    <div class="right">{{ flat.year }}</div>
+                                </div>
+                            </div>
+                            <div class="contacts">
+                                <div class="name">{{ flat.seller_name }}</div>
+                                <div class="phone">{{ flat.seller_phone }}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="text">Записаться на просмотр / консультация</div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="title">Описание квартиры</div>
+                <div class="text">{{ flat.text }}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </article>
+<footer>
+    <div class="botnav">
+        <div class="nav">
+            <a>Главная</a>
+            <a>Квартиры</a>
+            <a>Участки</a>
+            <a>Блог</a>
+            <a>Контакты</a>
+        </div>
+        <div class="contacts">
+            <div class="phone">
+                +78000000000
+            </div>
+            <div class="mail">
+                example@gmail.com
+            </div>
+        </div>
+    </div>
+    <div class="adress">
+        <div class="left">
+            <div class="town">Красноярск</div>
+            <div class="phone">8-800-444-44-44</div>
+            <div class="mail">example@gmail.com</div>
+            <div class="adres">проспект мира  дом  33 оф 333</div>
+            <div class="socs">
+                <a class="vk"></a>
+                <a class="inst"></a>
+            </div>
+        </div>
+        <div class="right">
+        </div>
+    </div>
+</footer>
 </body>
 </html>

@@ -2,9 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+    {% if flats %}
+        {%for object in flats%}
+            <p1>{{ object.type_Flat_Land }}</p1>
+        {% endfor %}
+    {% else %}
+        none
+    {% endif %}
 </body>
 </html>

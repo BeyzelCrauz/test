@@ -1,10 +1,245 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Каталог квартир</title>
+    <link rel="stylesheet" href="{% static 'css/flats.css' %}">
 </head>
 <body>
-$END$
+    <header>
+    <div class="left">Уют</div>
+    <div class="data">
+        <div class="top">8-800-000-00-00</div>
+        <div class="bot">пн-пт с 8 до 11</div>
+    </div>
+    <div class="nav">
+        <a href="../">Главная</a>
+        <a href="./">Участки</a>
+        <a href="./">Квартиры</a>
+        <a href="../blog">Блог</a>
+        <a href="">Контакты</a>
+    </div>
+    <div class="call">
+        <div class="icon"></div>
+        <div class="text">Заказать звонок</div>
+    </div>
+</header>
+    <article>
+        <div class="header">Продажа квартир в Красноярске</div>
+        <div class="nav">
+            Главная > Продажа квартир
+        </div>
+        <div class="filters">
+            <form>
+                <input class="drop" type="text" placeholder="Район">
+                <input class="drop" type="text" placeholder="Тип объекта">
+                <div class="rooms">
+                    <div class="text">Команты</div>
+                    <div class="rooms">
+                        <div class="room">1</div>
+                        <div class="room">2</div>
+                        <div class="room">3</div>
+                        <div class="room">4</div>
+                        <div class="room">5+</div>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="left">Цена от</div>
+                    <input type="text">
+                    <div class="center">До</div>
+                    <input type="text">
+                    <div class="center">руб.</div>
+                </div>
+                <input type="submit" class="sub" value="Найти">
+
+                <div class="price zz">
+                    <div class="left">Площадь  от</div>
+                    <input type="text">
+                    <div class="center">До</div>
+                    <input type="text">
+                    <div class="center">м<sup>2</sup></div>
+                </div>
+                <div class="more">+ Еще параметры</div>
+                <div class="price zz down">
+                    <div class="left">Общая площадь  от</div>
+                    <input class="inf" type="text">
+                    <div class="center">До</div>
+                    <input type="text">
+                    <div class="center">м<sup>2</sup></div>
+                </div>
+
+                <div class="price flat">
+                    <div class="left">Этаж от</div>
+                    <input type="text">
+                    <div class="center">До</div>
+                    <input type="text">
+                </div>
+
+                <input class="price" type="text" placeholder="Тип дома">
+
+                <div class="price zz down">
+                    <div class="left">Жилая площадь  от</div>
+                    <input class="inf" type="text">
+                    <div class="center">До</div>
+                    <input type="text">
+                    <div class="center">м<sup>2</sup></div>
+                </div>
+
+                <div class="price flat">
+                    <div class="left">Этажность от</div>
+                    <input type="text">
+                    <div class="center">До</div>
+                    <input type="text">
+                </div>
+                <div class="price year">
+                    <div class="left">Год постройки от</div>
+                    <input class="fst" type="text">
+                    <div class="center">До</div>
+                    <input type="text">
+                </div>
+
+                <div class="price zz down">
+                    <div class="left">Площадь кухни от</div>
+                    <input class="inf" type="text">
+                    <div class="center">До</div>
+                    <input type="text">
+                    <div class="center">м<sup>2</sup></div>
+                </div>
+
+                <div class="price flat material">
+                    <div class="left">Материал дома</div>
+                    <input type="text">
+                </div>
+            </form>
+        </div>
+        <div class="result">
+            <div class="nav">
+                <div class="sort">
+                    <div class="text">
+                    Сортировать по
+                    </div>
+                    <div class="dropDown"> Тип сортировки</div>
+                </div>
+                <div class="sort">
+                    <div class="text">
+                    Показать
+                    </div>
+                    <div class="dropDown"> Тип сортировки</div>
+                </div>
+                <div class="pages">
+                    <div class="text">Страница </div>
+                    <div class="nums">
+                        <div class="curPage">
+                            <div class="num">1</div></div>
+
+                        <div class="page">из 4</div>
+                    </div>
+                    <div class="controls">
+                        <div class="left ">
+                            <div class="icon unactive"></div>
+                        </div>
+                        <div class="right">
+                            <div class="icon unactive"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="objects">
+            {% for flat in flat %}
+                <div class="object">
+                    <div class="back">
+                        <div class="price">
+                            <div class="text"> {{ flat.price }} руб.</div>
+                        </div>
+                    </div>
+                    <div class="descr">
+                        <div class="top">
+                            <div class="rooms"> {{ flat.title }}</div>
+                            <div class="adress">{{ flat.adres }}</div>
+                        </div>
+                        <div class="bottom">
+                            <div class="row">
+                                <div class="left">Площадь</div>
+                                <div class="right">{{ flat.square }}кв</div>
+                            </div>
+                            <div class="row">
+                                <div class="left">Цена за квадрат</div>
+                                <div class="right">{{ flat.price_for_square }}</div>
+                            </div>
+                            <div class="row">
+                                <div class="left">В ипотеку</div>
+                                <div class="right">{{ flat.bank_price }}/мес</div>
+                            </div>
+                            <div class="row">
+                                <div class="left">Этажность / этаж</div>
+                                <div class="right">{{ flat.floors }}/{{ flat.floor }}</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="button">
+                        <a class="text" href="../flat/{{ flat.idef }}">Подробнее</a>
+                    </div>
+                </div>
+            {% endfor %}
+
+            </div>
+
+            <div class="pages">
+                <div class="text">Страница </div>
+                <div class="nums">
+                    <div class="curPage">
+                        <div class="num">1</div></div>
+
+                    <div class="page">из 4</div>
+                </div>
+                <div class="controls">
+                    <div class="left ">
+                        <div class="icon unactive"></div>
+                    </div>
+                    <div class="right">
+                        <div class="icon unactive"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <div class="botnav">
+            <div class="nav">
+                <a>Главная</a>
+                <a>Квартиры</a>
+                <a>Участки</a>
+                <a>Блог</a>
+                <a>Контакты</a>
+            </div>
+            <div class="contacts">
+                <div class="phone">
+                    +78000000000
+                </div>
+                <div class="mail">
+                    example@gmail.com
+                </div>
+            </div>
+        </div>
+        <div class="adress">
+            <div class="left">
+                <div class="town">Красноярск</div>
+                <div class="phone">8-800-444-44-44</div>
+                <div class="mail">example@gmail.com</div>
+                <div class="adres">проспект мира  дом  33 оф 333</div>
+                <div class="socs">
+                    <a class="vk"></a>
+                    <a class="inst"></a>
+                </div>
+            </div>
+            <div class="right">
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

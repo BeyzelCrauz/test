@@ -1,10 +1,178 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 </head>
 <body>
-$END$
+
+<header>
+    <div class="left">Уют</div>
+    <div class="data">
+        <div class="top">8-800-000-00-00</div>
+        <div class="bot">пн-пт с 8 до 11</div>
+    </div>
+    <div class="nav">
+        <a href="../">Главная</a>
+        <a href="../flats">Участки</a>
+        <a href="../flats">Квартиры</a>
+        <a href="./">Блог</a>
+        <a href="">Контакты</a>
+    </div>
+    <div class="call">
+        <div class="icon"></div>
+        <div class="text">Заказать звонок</div>
+    </div>
+</header>
+<article>
+
+    <div class="nav">
+        Главная > Блог
+    </div>
+    <div class="header">Блог</div>
+    <div class="post">
+        <div class="left"></div>
+        <div class="center">
+            <div class="col"></div>
+            <div class="triangle"></div>
+        </div>
+        <div class="right">
+            <div class="title">Как оформить право собственности на недвижимость</div>
+            <div class="text">Продается отличная трехкомнатная квартира на ФПК. Планировка: две спальни изолированные по 20 м2, просторная гостиная. Квартира после капитального ремонта: выровнены полы, стены, натяжные двухуровневые потолки, окна пластиковые, балкон застеклен, заменены радиаторы. Кухня 9 м2, выложен фартук из кафеля...</div>
+            <div class="tag">Название раздела</div>
+            <div class="bottom">
+                <div class="share">
+                    <div class="fb"></div>
+                    <div class="vk"></div>
+                    <div class="ok"></div>
+                    <div class="tw"></div>
+                </div>
+                <div class="date">
+                    <div class="clock"></div>
+                    <div class="time">14 июля 2018</div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="left ">
+                    <div class="icon unactive"></div>
+                </div>
+                <div class="right">
+                    <div class="icon unactive"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tags">
+        <div class="tag"><div class="text">Раздел</div> </div>
+        <div class="tag"><div class="text">Раздел</div> </div>
+        <div class="tag"><div class="text">Раздел</div> </div>
+        <div class="tag"><div class="text">Раздел</div> </div>
+        <div class="tag"><div class="text">Раздел</div> </div>
+    </div>
+    <div class="titleWrapper" >
+    <div class="titles" id="blogTi" style="left: 0vw">
+        {% for post in post  %}
+        <div class="blogPost">
+            <div class="top"style="background: url('/{{ post.img }}') no-repeat center; background-size: cover"></div>
+            <div class="bottom">
+                <div class="date">{{ post.created_date }}</div>
+                <a href="/blog/{{ post.identif }}" class="title">{{ post.title }}</a>
+                <div class="text">{{ post.short_text }}</div>
+                <div class="bottom">
+                    <div class="tag">Раздел</div>
+                    <div class="share">
+                        <div class="fb"></div>
+                        <div class="vk"></div>
+                        <div class="ok"></div>
+                        <div class="tw"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    </div>
+
+    <div class="pages">
+        <div class="text">Страница </div>
+        <div class="nums">
+            <div class="curPage">
+                <div class="num" id="cur">1</div></div>
+
+            <div class="page" id="all">из 4</div>
+        </div>
+        <div class="controls">
+            <div class="left " >
+                <div class="icon unactive" onclick="moveLeft()"></div>
+            </div>
+            <div class="right">
+                <div class="icon unactive" onclick="moveRight()"></div>
+            </div>
+        </div>
+    </div>
+</article>
+<script>
+    wrapper =document.getElementById('blogTi');
+    titles = document.getElementById('blogTi').getElementsByClassName("blogPost");
+    wrapper.style.width = titles.length * 31 + "vw";
+    left=0;
+    cur=0;
+    all= Math.ceil(titles.length/3);
+    document.getElementById('all').textContent = all;
+    function moveLeft() {
+        if( left!=0) {
+            left = left + 93;
+            wrapper.style.left = left + 'vw';
+
+            cur =(-left/93)+1;
+            document.getElementById('cur').textContent = cur
+        }
+    }
+    function moveRight() {
+        if(cur!=all) {
+            left = left - 93;
+            wrapper.style.left = left + 'vw';
+            cur = (-left / 93) + 1;
+            document.getElementById('cur').textContent = cur
+        }
+    }
+</script>
+<footer>
+    <div class="botnav">
+        <div class="nav">
+            <a>Главная</a>
+            <a>Квартиры</a>
+            <a>Участки</a>
+            <a>Блог</a>
+            <a>Контакты</a>
+        </div>
+        <div class="contacts">
+            <div class="phone">
+                +78000000000
+            </div>
+            <div class="mail">
+                example@gmail.com
+            </div>
+        </div>
+    </div>
+    <div class="adress">
+        <div class="left">
+            <div class="town">Красноярск</div>
+            <div class="phone">8-800-444-44-44</div>
+            <div class="mail">example@gmail.com</div>
+            <div class="adres">проспект мира  дом  33 оф 333</div>
+            <div class="socs">
+                <a class="vk"></a>
+                <a class="inst"></a>
+            </div>
+        </div>
+        <div class="right">
+        </div>
+    </div>
+</footer>
 </body>
 </html>

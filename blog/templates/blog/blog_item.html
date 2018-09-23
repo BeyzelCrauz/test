@@ -1,10 +1,98 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/blog_item.css' %}">
 </head>
 <body>
-$END$
+    <header>
+        <div class="left">Уют</div>
+        <div class="data">
+            <div class="top">8-800-000-00-00</div>
+            <div class="bot">пн-пт с 8 до 11</div>
+        </div>
+        <div class="nav">
+            <a href="../../">Главная</a>
+            <a href="#">Участки</a>
+            <a href="#">Квартиры</a>
+            <a href="#">Блог</a>
+            <a href="contacts.html">Контакты</a>
+        </div>
+        <div class="call">
+            <div class="icon"></div>
+            <div class="text">Заказать звонок</div>
+        </div>
+    </header>
+    <article>
+
+        {% for post in post  %}
+            <script type="text/javascript" >
+                 js_list = {{post}};
+                alert(js_list)
+            </script>
+        <div class="nav">
+            Главная > Блог > {{ post.title }}
+        </div>
+        <div class="adr">{{ post.created_date }}</div>
+        <div class="header">{{ post.title }}</div>
+        <div class="socials">
+            <div class="fb"></div>
+            <div class="vk"></div>
+            <div class="ok"></div>
+            <div class="tw"></div>
+        </div>
+        <div class="post">
+            <div class="photo" style="background: url('../{{ post.img }}') no-repeat center; background-size: cover"></div>
+            <div class="text">{{ post.text }}
+            </div>
+        </div>
+        <div class="socials">
+            <div class="fb"></div>
+            <div class="vk"></div>
+            <div class="ok"></div>
+            <div class="tw"></div>
+        </div>
+
+        {% endfor %}
+    </article>
+    <footer>
+        <div class="botnav">
+            <div class="nav">
+                <a>Главная</a>
+                <a>Квартиры</a>
+                <a>Участки</a>
+                <a>Блог</a>
+                <a>Контакты</a>
+            </div>
+            <div class="contacts">
+                <div class="phone">
+                    +78000000000
+                </div>
+                <div class="mail">
+                    example@gmail.com
+                </div>
+            </div>
+        </div>
+        <div class="adress">
+            <div class="left">
+                <div class="town">Красноярск</div>
+                <div class="phone">8-800-444-44-44</div>
+                <div class="mail">example@gmail.com</div>
+                <div class="adres">проспект мира  дом  33 оф 333</div>
+                <div class="socs">
+                    <a class="vk"></a>
+                    <a class="inst"></a>
+                </div>
+            </div>
+            <div class="right">
+            </div>
+        </div>
+    </footer>
+
+
+
+
 </body>
 </html>

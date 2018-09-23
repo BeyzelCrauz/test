@@ -469,6 +469,22 @@ article > main {
         -ms-transform: matrix(0.9999443099, 0, 0, 1.2, 0, 0);
         padding-left: 1vw;
         outline: none; }
+      article > main > .filter > form > select {
+        width: 17.8vw;
+        height: 5.5vh;
+        border-radius: 0.7407407407vh;
+        background-color: #d4eaf9;
+        border: none;
+        margin-right: 5.7vw;
+        font-size: 1.6666666667vh;
+        font-family: "He";
+        color: #848383;
+        text-align: left;
+        -moz-transform: matrix(0.9999443099, 0, 0, 1.2, 0, 0);
+        -webkit-transform: matrix(0.9999443099, 0, 0, 1.2, 0, 0);
+        -ms-transform: matrix(0.9999443099, 0, 0, 1.2, 0, 0);
+        padding-left: 1vw;
+        outline: none; }
       article > main > .filter > form > .sub {
         width: 18.8vw;
         height: 5.5vh;
@@ -728,6 +744,8 @@ article > .blog {
           -webkit-transform: matrix(1.0003269082, 0, 0, 1.1996341296, 0, 0);
           -ms-transform: matrix(1.0003269082, 0, 0, 1.1996341296, 0, 0); }
         article > .blog > .posts > .post > .descr > .title {
+          text-decoration: none;
+          outline: none;
           font-size: 2.2222222222vh;
           font-family: "He";
           color: white;
@@ -771,6 +789,8 @@ article > .blog {
       opacity: 0.5;
       cursor: pointer; }
     article > .blog > .button > .text {
+      display: block;
+      text-decoration: none;
       font-size: 1.6666666667vh;
       font-family: "He";
       color: #2a2a2a;
